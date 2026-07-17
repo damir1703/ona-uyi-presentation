@@ -6,6 +6,7 @@ import Lightbox from "../components/Lightbox";
 import { Reveal, RItem } from "../components/motion";
 import { useApp } from "../context";
 import { content } from "../data/content";
+import { defaultPhotos } from "../data/defaults";
 import type { SlideProps } from "./types";
 
 const tagColors = ["#065F46", "#0D9488", "#D97706"];
@@ -16,11 +17,12 @@ export default function Slide07({ n, total, active }: SlideProps) {
   const c = content.slide07;
   const [lbIndex, setLbIndex] = useState<number | null>(null);
 
-  const filledImages = GRID_IDS.map((id) => photos[id]).filter(Boolean) as string[];
+  const eff = (id: string) => photos[id] || defaultPhotos[id];
+  const filledImages = GRID_IDS.map(eff).filter(Boolean) as string[];
 
   const openLightbox = (cellId: string) => {
-    if (!photos[cellId] || exportMode) return;
-    const idx = GRID_IDS.filter((id, i) => photos[id] && GRID_IDS.indexOf(cellId) >= i).length - 1;
+    if (!eff(cellId) || exportMode) return;
+    const idx = GRID_IDS.filter((id, i) => eff(id) && GRID_IDS.indexOf(cellId) >= i).length - 1;
     setLbIndex(Math.max(0, idx));
   };
 
@@ -51,10 +53,10 @@ export default function Slide07({ n, total, active }: SlideProps) {
               key={id}
               className="s07__cell"
               onClick={() => openLightbox(id)}
-              style={{ cursor: photos[id] && !exportMode ? "zoom-in" : undefined }}
+              style={{ cursor: eff(id) && !exportMode ? "zoom-in" : undefined }}
             >
               <PhotoUpload id={id} compact />
-              {photos[id] && !exportMode && (
+              {eff(id) && !exportMode && (
                 <span className="s07__zoom">
                   <Search size={18} />
                 </span>

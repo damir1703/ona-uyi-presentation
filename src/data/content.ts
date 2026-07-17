@@ -182,6 +182,29 @@ export const content = {
       uz: "Muslibonu endi mustaqil yuradi va ovqatlanadi. Dinora qizining bog'chasida tarbiyachi bo'lib ishlaydi. Mustaqil yashaydi, nafaqa va alimentlar oladi.",
     },
   },
+  slideMadina: {
+    tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
+    name: "Madina Barnoxo'jayeva",
+    caption: {
+      ru: "С июля 2024 · менеджер в салоне ASHLEY",
+      uz: "2024-yil iyuldan · ASHLEY salonida menejer",
+    },
+    situationTitle: { ru: "Ситуация", uz: "Vaziyat" },
+    situation: {
+      ru: "Обратилась в проект в июле 2024 года в тяжёлой жизненной ситуации. Без постоянного жилья и стабильного дохода, с серьёзными психологическими, материальными трудностями и проблемами со здоровьем.",
+      uz: "2024-yil iyulda og'ir hayotiy vaziyatda loyihaga murojaat qildi. Doimiy uy-joy va barqaror daromadsiz, jiddiy psixologik, moddiy qiyinchiliklar va sog'ligʻida muammolar bilan.",
+    },
+    actionTitle: { ru: "Что сделал фонд", uz: "Fond nima qildi" },
+    action: {
+      ru: "Разработали индивидуальный план сопровождения: психологическая, медицинская, юридическая и социальная поддержка. Стабилизировали здоровье и давление, при поддержке благотворителей провели зубопротезирование (импланты). Младшую дочь устроили в государственный детский сад.",
+      uz: "Individual hamrohlik rejasi tuzildi: psixologik, tibbiy, yuridik va ijtimoiy yordam. Sog'ligʻi va qon bosimi barqarorlashtirildi, xayriyachilar yordamida tish protezlash (implantlar) o'tkazildi. Kichik qizi davlat bogʻchasiga joylashtirildi.",
+    },
+    resultTitle: { ru: "Результат", uz: "Natija" },
+    result: {
+      ru: "Трудоустроилась менеджером по продажам в мебельный салон ASHLEY со стабильным официальным доходом. Самостоятельно воспитывает дочь, обрела финансовую независимость, психологическую устойчивость и уверенность в будущем.",
+      uz: "ASHLEY mebel saloniga savdo menejeri bo'lib, barqaror rasmiy daromad bilan ishga joylashdi. Qizini mustaqil tarbiyalaydi, moliyaviy mustaqillik, psixologik barqarorlik va kelajakka ishonch topdi.",
+    },
+  },
   slide10: {
     title: { ru: "8 домов по всему Узбекистану", uz: "O'zbekistondagi 8 ta uyimiz" },
     total: { ru: "212+ мам и их детей получили помощь", uz: "212+ ona va ularning bolalari yordam oldi" },

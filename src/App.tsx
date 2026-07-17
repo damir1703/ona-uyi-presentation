@@ -12,13 +12,14 @@ import Slide06 from "./slides/Slide06";
 import Slide07 from "./slides/Slide07";
 import Slide08 from "./slides/Slide08";
 import Slide09 from "./slides/Slide09";
+import SlideMadina from "./slides/SlideMadina";
 import Slide10 from "./slides/Slide10";
 import Slide11 from "./slides/Slide11";
 import type { SlideProps } from "./slides/types";
 
 const SLIDES: React.ComponentType<SlideProps>[] = [
   Slide01, Slide02, Slide03, Slide04, Slide05, Slide06,
-  Slide07, Slide08, Slide09, Slide10, Slide11,
+  Slide07, Slide08, Slide09, SlideMadina, Slide10, Slide11,
 ];
 const TOTAL = SLIDES.length;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));

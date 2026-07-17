@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Camera, X } from "lucide-react";
 import { useApp } from "../context";
 import { content } from "../data/content";
+import { defaultPhotos } from "../data/defaults";
 
 interface Props {
   id: string;
@@ -17,7 +18,8 @@ export default function PhotoUpload({ id, shape = "rect", compact = false, label
   const { lang, photos, setPhoto, removePhoto, exportMode } = useApp();
   const inputRef = useRef<HTMLInputElement>(null);
   const [dragOver, setDragOver] = useState(false);
-  const src = photos[id];
+  const uploaded = photos[id];
+  const src = uploaded || defaultPhotos[id];
 
   const radius = shape === "circle" ? "50%" : compact ? 12 : 20;
 
@@ -46,7 +48,7 @@ export default function PhotoUpload({ id, shape = "rect", compact = false, label
       <div className="photo photo--filled" style={{ borderRadius: radius, ...ringStyle }}>
         <img src={src} alt="" style={{ borderRadius: radius }} />
         {label && <div className="photo__caption">{label}</div>}
-        {!exportMode && (
+        {!exportMode && uploaded && (
           <button
             className="photo__remove"
             aria-label="Удалить фото"
