@@ -164,7 +164,7 @@ export const content = {
   },
   slide09: {
     tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
-    name: "Dinora Barakayeva",
+    name: "Dinara Barakayeva",
     caption: { ru: "21 год, Самарканд → Ташкент", uz: "21 yosh, Samarqand → Toshkent" },
     situationTitle: { ru: "Ситуация", uz: "Vaziyat" },
     situation: {
@@ -178,8 +178,8 @@ export const content = {
     },
     resultTitle: { ru: "Результат", uz: "Natija" },
     result: {
-      ru: "Муслибону теперь самостоятельно ходит и ест. Динора работает воспитателем в детском саду, где воспитывается её дочь. Живёт самостоятельно, получает алименты и детское пособие.",
-      uz: "Muslibonu endi mustaqil yuradi va ovqatlanadi. Dinora qizining bog'chasida tarbiyachi bo'lib ishlaydi. Mustaqil yashaydi, nafaqa va alimentlar oladi.",
+      ru: "Муслибону теперь самостоятельно ходит и ест. Динара работает воспитателем в детском саду, где воспитывается её дочь. Живёт самостоятельно, получает алименты и детское пособие.",
+      uz: "Muslibonu endi mustaqil yuradi va ovqatlanadi. Dinara qizining bog'chasida tarbiyachi bo'lib ishlaydi. Mustaqil yashaydi, nafaqa va alimentlar oladi.",
     },
   },
   slideMadina: {

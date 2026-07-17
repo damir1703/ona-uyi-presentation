@@ -1,6 +1,7 @@
 import { Download, Loader2 } from "lucide-react";
 import { useApp } from "../context";
 import { content } from "../data/content";
+import logo from "../assets/logo.png";
 
 interface Props {
   onExport: () => void;
@@ -12,7 +13,7 @@ export default function Navbar({ onExport, exporting }: Props) {
   return (
     <header className="navbar">
       <div className="navbar__brand">
-        <span className="navbar__heart">💚</span>
+        <img className="navbar__logo-img" src={logo} alt="ONA UYI" />
         <span className="navbar__logo">ONA UYI</span>
       </div>
 
