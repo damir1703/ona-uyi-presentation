@@ -669,41 +669,41 @@ img { display: block; max-width: 100%; }
 /* ============================================================
    SLIDE 07 — Training
    ============================================================ */
-.s07__grid { flex: 1; display: grid; grid-template-columns: 42% 58%; gap: 36px; min-height: 0; }
-.s07__left { display: flex; flex-direction: column; gap: 18px; overflow: auto; }
-.s07__text { font-size: 15px; line-height: 1.8; color: var(--text-secondary); }
-.s07__tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.s07__wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.s07__text {
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 820px;
+  text-align: center;
+}
+.s07__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 940px;
+}
 .s07__tag {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
   color: #fff;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  padding: 8px 15px;
+  padding: 12px 22px;
   border-radius: 100px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s var(--ease);
 }
-.s07__photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  min-height: 0;
-}
-.s07__cell { position: relative; border-radius: 12px; overflow: hidden; }
-.s07__cell:hover .s07__zoom { opacity: 1; }
-.s07__zoom {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(16, 185, 129, 0.25);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.25s var(--ease);
-  pointer-events: none;
-}
+.s07__tag:hover { transform: translateY(-3px) scale(1.04); }
 
 /* ============================================================
    SLIDES 08 / 09 — Stories
