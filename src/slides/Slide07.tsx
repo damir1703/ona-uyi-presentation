@@ -7,8 +7,8 @@ import type { SlideProps } from "./types";
 const tagColors = ["#065F46", "#0D9488", "#D97706"];
 
 export default function Slide07({ n, total, active }: SlideProps) {
-  const { lang } = useApp();
-  const c = content.slide07;
+  const { lang, house } = useApp();
+  const c = house === "quvosoy" ? content.quvosoyCourses : content.slide07;
 
   return (
     <SlideShell n={n} total={total} className="s07">

@@ -11,7 +11,6 @@ import Slide01 from "./slides/Slide01";
 import Slide02 from "./slides/Slide02";
 import Slide03 from "./slides/Slide03";
 import Slide04 from "./slides/Slide04";
-import Slide05 from "./slides/Slide05";
 import Slide06 from "./slides/Slide06";
 import Slide07 from "./slides/Slide07";
 import Slide08 from "./slides/Slide08";
@@ -37,7 +36,6 @@ function buildSlides(house: House): SlideRenderer[] {
     (p) => <Slide03 {...p} />,
     (p) => <Slide04 {...p} />,
     (p) => <Slide07 {...p} />,
-    (p) => <Slide05 {...p} />,
     (p) => <Slide10 {...p} />,
   ];
   // Ветка конкретного дома

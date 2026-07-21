@@ -6,8 +6,9 @@ import { content } from "../data/content";
 import type { SlideProps } from "./types";
 
 export default function Slide04({ n, total, active }: SlideProps) {
-  const { lang } = useApp();
+  const { lang, house } = useApp();
   const c = content.slide04;
+  const photoId = house === "quvosoy" ? "s04_photo_q" : "s04_photo";
   return (
     <SlideShell n={n} total={total} className="s04">
       <div className="s04__grid">
@@ -23,7 +24,7 @@ export default function Slide04({ n, total, active }: SlideProps) {
           </RItem>
           <RItem>
             <div className="s04__photo">
-              <PhotoUpload id="s04_photo" shape="circle" ring="#10B981" />
+              <PhotoUpload id={photoId} shape="circle" ring="#10B981" />
             </div>
           </RItem>
         </Reveal>

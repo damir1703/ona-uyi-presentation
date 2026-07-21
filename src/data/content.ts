@@ -142,6 +142,21 @@ export const content = {
       { icon: "🎭", ru: "Уроки танцев", uz: "Raqs darslari" },
     ],
   },
+  quvosoyCourses: {
+    title: { ru: "Обучение и мероприятия в Доме Кувасой", uz: "Quvasoy uyida o'qitish va tadbirlar" },
+    text: {
+      ru: "В Доме Кувасой мамы осваивают востребованные профессии и навыки — от ремесла до цифровой грамотности и работы с искусственным интеллектом.",
+      uz: "Quvasoy uyida onalar talab yuqori kasb va ko'nikmalarni egallaydi — hunarmandchilikdan raqamli savodxonlik va sun'iy intellekt bilan ishlashgacha.",
+    },
+    masterclasses: [
+      { icon: "🧼", ru: "Мыловарение", uz: "Sovun tayyorlash" },
+      { icon: "🍞", ru: "Выпечка", uz: "Nonvoychilik" },
+      { icon: "📿", ru: "Бисероплетение", uz: "Munchoq ishi" },
+      { icon: "💻", ru: "Компьютерная грамотность", uz: "Kompyuter savodxonligi" },
+      { icon: "🤖", ru: "Работа с искусственным интеллектом", uz: "Sun'iy intellekt bilan ishlash" },
+      { icon: "👶", ru: "Курсы детского массажа", uz: "Bolalar massaji kurslari" },
+    ],
+  },
   slide08: {
     tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
     name: "Zarnig'or Rahmonova",

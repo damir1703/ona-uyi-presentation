@@ -6,8 +6,9 @@ import { content } from "../data/content";
 import type { SlideProps } from "./types";
 
 export default function Slide03({ n, total, active }: SlideProps) {
-  const { lang } = useApp();
+  const { lang, house } = useApp();
   const c = content.slide03;
+  const photoId = (i: number) => (house === "quvosoy" ? `s03q_${i}` : `s03_${i}`);
   return (
     <SlideShell n={n} total={total} className="s03">
       <Reveal active={active} className="s03__wrap">
@@ -20,7 +21,7 @@ export default function Slide03({ n, total, active }: SlideProps) {
           {c.categories.map((cat, i) => (
             <div className="s03__cat" key={i}>
               <div className="s03__circle">
-                <PhotoUpload id={`s03_${i}`} shape="circle" />
+                <PhotoUpload id={photoId(i)} shape="circle" />
                 <span className="s03__cat-icon">{cat.icon}</span>
               </div>
               <h3>{cat.title[lang]}</h3>
