@@ -228,7 +228,7 @@ export const content = {
   storyMahliyo: {
     tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
     name: "Mahliyo Qodirova",
-    caption: { ru: "24 года · ждёт ребёнка · юрист", uz: "24 yosh · farzand kutmoqda · yurist" },
+    caption: { ru: "24 года · мама", uz: "24 yosh · ona" },
     situationTitle: { ru: "Ситуация", uz: "Vaziyat" },
     situation: {
       ru: "Ранняя утрата близкого человека и повторяющиеся разрушительные отношения. Беременность обострила кризис — партнёр отстранился. Без стабильного дохода, страх одиночества, потеря себя.",
@@ -290,10 +290,33 @@ export const content = {
       uz: "«ONA UYI» jamg'armasining Farg'ona vodiysidagi resurs markazi. 2025-yil avgustda ochildi — qiyin vaziyatdagi onalar va bolalar uchun g'amxo'rlik uyi.",
     },
     facts: [
-      { icon: "🏠", ru: "Открыт: август 2025", uz: "Ochildi: avgust 2025" },
+      { icon: "🏠", ru: "Открыт: 9 сентября 2025", uz: "Ochildi: 2025-yil 9-sentabr" },
       { icon: "🗺", ru: "Ферганская долина", uz: "Farg'ona vodiysi" },
       { icon: "📍", ru: "Рядом с Андижаном", uz: "Andijon yaqinida" },
       { icon: "💚", ru: "100% бесплатно и конфиденциально", uz: "100% bepul va maxfiy" },
+    ],
+  },
+  quvosoyResults: {
+    title: { ru: "Результаты Дома Кувасой", uz: "Quvasoy uyi natijalari" },
+    badge: { ru: "35 обращений · сегодня 9 мам и 13 детей", uz: "35 murojaat · bugun 9 ona va 13 bola" },
+    achievements: [
+      { num: 16, icon: "🤱", ru: "Женщин получили помощь", uz: "Ayollar yordam oldi", color: "#10B981" },
+      { num: 25, icon: "👶", ru: "Детей под опекой", uz: "Bolalar g'amxo'rlikda", color: "#0D9488" },
+      { num: 15, icon: "💼", ru: "Трудоустроены", uz: "Ishga joylashdi", color: "#D97706" },
+      { num: 6, icon: "🏡", ru: "Воссоединились с семьёй", uz: "Oila bilan qayta birlashdi", color: "#065F46" },
+      { num: 11, icon: "📚", ru: "Образование и курсы", uz: "Ta'lim va kurslar", color: "#10B981" },
+      { num: 4, icon: "🍼", ru: "Детей родились в проекте", uz: "Loyihada tug'ilgan bolalar", color: "#0D9488" },
+      { num: 3, icon: "🔑", ru: "Получили жильё", uz: "Uy-joy oldi", color: "#D97706" },
+      { num: 8, icon: "🎒", ru: "Детей в детский сад", uz: "Bolalar bog'chaga", color: "#065F46" },
+    ],
+    medTitle: { ru: "Медицинская помощь", uz: "Tibbiy yordam" },
+    med: [
+      { icon: "👁", ru: "Операция на глаз (соцфонд, 25 млн)", uz: "Ko'z operatsiyasi (ijtimoiy fond, 25 mln)" },
+      { icon: "🩺", ru: "Лечение гепатита С", uz: "Gepatit C davolash" },
+      { icon: "🤰", ru: "Кесарево сечение — 2", uz: "Kesar kesish — 2" },
+      { icon: "🦴", ru: "Полиартрит", uz: "Poliartrit" },
+      { icon: "🦷", ru: "Лечение и вставка зубов — 2", uz: "Tish davolash va protez — 2" },
+      { icon: "➕", ru: "Обрезание — 2", uz: "Sunnat — 2" },
     ],
   },
 } as const;

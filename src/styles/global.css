@@ -665,6 +665,10 @@ img { display: block; max-width: 100%; }
   transition: width 0.9s var(--ease) 0.2s;
 }
 .s06__geo-count { width: 22px; text-align: right; font-weight: 800; color: var(--primary-light); }
+.qmed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.qmed li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.35; }
+.qmed__icon { font-size: 16px; flex-shrink: 0; }
+.qmed__text { opacity: 0.92; }
 
 /* ============================================================
    SLIDE 07 — Training
@@ -994,6 +998,37 @@ img { display: block; max-width: 100%; }
   border-radius: 100px;
 }
 
+/* ============================================================
+   FINANCE DETAIL (budget breakdown)
+   ============================================================ */
+.fdet__wrap { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+.fdet__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
+.fdet__col {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+}
+.fdet__col-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid;
+}
+.fdet__col-dot { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+.fdet__col-name { flex: 1; font-size: 13px; font-weight: 700; color: var(--primary-deep); line-height: 1.2; }
+.fdet__col-total { font-family: "Fraunces", serif; font-weight: 700; font-size: 15px; color: var(--primary-deep); white-space: nowrap; }
+.fdet__col-total em { font-style: normal; font-family: "Manrope"; font-size: 11px; font-weight: 700; color: var(--text-muted); }
+.fdet__items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.fdet__item-row { display: flex; align-items: baseline; gap: 8px; }
+.fdet__item-name { flex: 1; font-size: 12.5px; color: var(--text-secondary); line-height: 1.25; }
+.fdet__item-usd { font-size: 12.5px; font-weight: 700; color: var(--text-primary); white-space: nowrap; }
+.fdet__item-track { display: block; height: 4px; border-radius: 100px; background: var(--primary-soft); margin-top: 4px; overflow: hidden; }
+.fdet__item-fill { display: block; height: 100%; border-radius: 100px; transition: width 0.8s var(--ease) 0.15s; opacity: 0.75; }
+
 /* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed;
@@ -1206,6 +1241,7 @@ body.exporting .slide-holder { transition: none; }
   .qintro__photos { height: auto; grid-template-rows: 220px 160px; }
   .s01__right { min-height: 260px; }
   .s06__cards { grid-template-columns: repeat(2, 1fr); }
+  .fdet__cols { grid-template-columns: 1fr; }
   .s05__big { flex-wrap: wrap; }
   .s05__card { min-width: 45%; }
   .s02__photos { flex-direction: column; }

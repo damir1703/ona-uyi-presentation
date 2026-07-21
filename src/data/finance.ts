@@ -29,6 +29,100 @@ const CARE = "#10B981";
 const HOUSE = "#D97706";
 const MGMT = "#7C3AED";
 
+export interface DetailItem {
+  ru: string;
+  uz: string;
+  usd: number;
+}
+export interface DetailGroup {
+  catKey: "care" | "house" | "mgmt";
+  items: DetailItem[];
+}
+
+// Детальная разбивка бюджета по статьям (из финотчётов, $ = сум / 12000)
+export const financeDetail: Record<House, DetailGroup[]> = {
+  tashkent: [
+    {
+      catKey: "care",
+      items: [
+        { ru: "Питание и сан-гигиена", uz: "Oziq-ovqat va gigiena", usd: 31387 },
+        { ru: "Одежда", uz: "Kiyim", usd: 270 },
+        { ru: "Лекарства и мед. услуги", uz: "Dori va tibbiy xizmat", usd: 7530 },
+        { ru: "Психолог", uz: "Psixolog", usd: 6627 },
+        { ru: "Медработник", uz: "Tibbiyot xodimi", usd: 3159 },
+        { ru: "Специалист соц. работы (2 чел.)", uz: "Ijtimoiy ish mutaxassisi (2 kishi)", usd: 9046 },
+        { ru: "Координатор", uz: "Koordinator", usd: 29427 },
+      ],
+    },
+    {
+      catKey: "house",
+      items: [
+        { ru: "Аренда помещения + налог, риэлтор", uz: "Ijara + soliq, rieltor", usd: 97229 },
+        { ru: "Обустройство дома", uz: "Uyni jihozlash", usd: 11472 },
+        { ru: "Коммунальные услуги", uz: "Kommunal xizmatlar", usd: 240 },
+        { ru: "Хозтовары", uz: "Xo'jalik mollari", usd: 944 },
+        { ru: "Услуги связи", uz: "Aloqa xizmatlari", usd: 46 },
+        { ru: "Видеонаблюдение", uz: "Videokuzatuv", usd: 52 },
+      ],
+    },
+    {
+      catKey: "mgmt",
+      items: [
+        { ru: "Зарплата АУП + налоги", uz: "ABH maoshi + soliq", usd: 63191 },
+        { ru: "Единовременный расход на открытие", uz: "Ochilish uchun bir martalik xarajat", usd: 6831 },
+        { ru: "Транспорт / ГСМ", uz: "Transport / YoQM", usd: 3848 },
+        { ru: "Мобилограф", uz: "Mobilograf", usd: 2534 },
+        { ru: "Мероприятия", uz: "Tadbirlar", usd: 1147 },
+        { ru: "Непредвиденные (матпомощь)", uz: "Kutilmagan (moddiy yordam)", usd: 948 },
+        { ru: "Канцтовары + корп. номера", uz: "Kanselyariya + korp. raqamlar", usd: 848 },
+        { ru: "Услуги банка", uz: "Bank xizmatlari", usd: 542 },
+        { ru: "Аренда офиса + налог", uz: "Ofis ijarasi + soliq", usd: 376 },
+        { ru: "Аудит", uz: "Audit", usd: 135 },
+      ],
+    },
+  ],
+  quvosoy: [
+    {
+      catKey: "care",
+      items: [
+        { ru: "Питание и сан-гигиена", uz: "Oziq-ovqat va gigiena", usd: 13724 },
+        { ru: "Специалист соц. работы (2 чел.)", uz: "Ijtimoiy ish mutaxassisi (2 kishi)", usd: 12919 },
+        { ru: "Координатор", uz: "Koordinator", usd: 5494 },
+        { ru: "Психолог", uz: "Psixolog", usd: 5154 },
+        { ru: "Медработник", uz: "Tibbiyot xodimi", usd: 2431 },
+        { ru: "Лекарства и мед. услуги", uz: "Dori va tibbiy xizmat", usd: 919 },
+        { ru: "Одежда", uz: "Kiyim", usd: 553 },
+      ],
+    },
+    {
+      catKey: "house",
+      items: [
+        { ru: "Аренда помещения + налог, риэлтор", uz: "Ijara + soliq, rieltor", usd: 18007 },
+        { ru: "Коммунальные услуги", uz: "Kommunal xizmatlar", usd: 1743 },
+        { ru: "Обустройство дома", uz: "Uyni jihozlash", usd: 1180 },
+        { ru: "Хозтовары", uz: "Xo'jalik mollari", usd: 774 },
+        { ru: "Видеонаблюдение", uz: "Videokuzatuv", usd: 207 },
+        { ru: "Услуги связи", uz: "Aloqa xizmatlari", usd: 107 },
+      ],
+    },
+    {
+      catKey: "mgmt",
+      items: [
+        { ru: "Единовременный расход на открытие", uz: "Ochilish uchun bir martalik xarajat", usd: 11031 },
+        { ru: "Зарплата АУП + налоги", uz: "ABH maoshi + soliq", usd: 8114 },
+        { ru: "Мобилограф", uz: "Mobilograf", usd: 1850 },
+        { ru: "Транспорт / ГСМ", uz: "Transport / YoQM", usd: 1205 },
+        { ru: "Мероприятия", uz: "Tadbirlar", usd: 697 },
+        { ru: "Канцтовары", uz: "Kanselyariya", usd: 537 },
+        { ru: "Аренда офиса + налог", uz: "Ofis ijarasi + soliq", usd: 405 },
+        { ru: "Аудит", uz: "Audit", usd: 326 },
+        { ru: "Услуги банка", uz: "Bank xizmatlari", usd: 245 },
+        { ru: "Непредвиденные (матпомощь)", uz: "Kutilmagan (moddiy yordam)", usd: 13 },
+      ],
+    },
+  ],
+};
+
 export const finance: Record<House, HouseFinance> = {
   tashkent: {
     since_ru: "Июнь 2024 — Июнь 2026",

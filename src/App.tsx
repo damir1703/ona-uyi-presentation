@@ -20,7 +20,9 @@ import SlideMadina from "./slides/SlideMadina";
 import Slide10 from "./slides/Slide10";
 import Slide11 from "./slides/Slide11";
 import FinanceSlide from "./slides/FinanceSlide";
+import FinanceDetailSlide from "./slides/FinanceDetailSlide";
 import SlideQuvosoyIntro from "./slides/SlideQuvosoyIntro";
+import SlideQuvosoyResults from "./slides/SlideQuvosoyResults";
 import SlideNigora from "./slides/SlideNigora";
 import SlideMahliyo from "./slides/SlideMahliyo";
 import SlideNargiza from "./slides/SlideNargiza";
@@ -45,13 +47,16 @@ function buildSlides(house: House): SlideRenderer[] {
           (p) => <Slide02 {...p} />,
           (p) => <Slide06 {...p} />,
           (p) => <FinanceSlide {...p} house="tashkent" />,
+          (p) => <FinanceDetailSlide {...p} house="tashkent" />,
           (p) => <Slide08 {...p} />,
           (p) => <Slide09 {...p} />,
           (p) => <SlideMadina {...p} />,
         ]
       : [
           (p) => <SlideQuvosoyIntro {...p} />,
+          (p) => <SlideQuvosoyResults {...p} />,
           (p) => <FinanceSlide {...p} house="quvosoy" />,
+          (p) => <FinanceDetailSlide {...p} house="quvosoy" />,
           (p) => <SlideNigora {...p} />,
           (p) => <SlideMahliyo {...p} />,
           (p) => <SlideNargiza {...p} />,
