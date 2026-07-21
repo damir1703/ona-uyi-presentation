@@ -205,6 +205,66 @@ export const content = {
       uz: "ASHLEY mebel saloniga savdo menejeri bo'lib, barqaror rasmiy daromad bilan ishga joylashdi. Qizini mustaqil tarbiyalaydi, moliyaviy mustaqillik, psixologik barqarorlik va kelajakka ishonch topdi.",
     },
   },
+  storyNigora: {
+    tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
+    name: "Nigora Jo'rayeva",
+    caption: { ru: "1982, г. Кувасай · швея-дизайнер", uz: "1982, Quvasoy sh. · dizayner-tikuvchi" },
+    situationTitle: { ru: "Ситуация", uz: "Vaziyat" },
+    situation: {
+      ru: "Тяжёлый брак без поддержки, одна растит двоих детей (10 лет и 1,5 года). Диагноз гепатит B без возможности полноценного лечения. Эмоциональное и физическое истощение.",
+      uz: "Qo'llab-quvvatlovsiz og'ir nikoh, ikki bolani (10 va 1,5 yosh) yolg'iz tarbiyalaydi. Gepatit B tashxisi, to'liq davolanish imkonisiz. Hissiy va jismoniy charchoq.",
+    },
+    actionTitle: { ru: "Что сделал фонд", uz: "Fond nima qildi" },
+    action: {
+      ru: "«Дом Мамы» дал жильё, заботу и человеческое тепло. Регулярная психологическая поддержка помогла заполнить внутреннюю пустоту и вернуть веру в себя. Помогли выйти на работу.",
+      uz: "«Ona uyi» boshpana, g'amxo'rlik va insoniy iliqlik berdi. Muntazam psixologik yordam ichki bo'shliqni to'ldirib, o'ziga ishonchni qaytardi. Ishga chiqishga ko'maklashdi.",
+    },
+    resultTitle: { ru: "Результат", uz: "Natija" },
+    result: {
+      ru: "Работает в библиотеке и подрабатывает в кафе, совмещая с заботой о детях. Мечтает открыть кабинет детского массажа. Шаг за шагом строит стабильное будущее для детей.",
+      uz: "Kutubxonada ishlaydi va kafeda qo'shimcha ishlaydi, bolalar bilan birga. Bolalar massaji kabinetini ochishni orzu qiladi. Bolalari uchun barqaror kelajakni qadam-baqadam quradi.",
+    },
+  },
+  storyMahliyo: {
+    tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
+    name: "Mahliyo Qodirova",
+    caption: { ru: "24 года · ждёт ребёнка · юрист", uz: "24 yosh · farzand kutmoqda · yurist" },
+    situationTitle: { ru: "Ситуация", uz: "Vaziyat" },
+    situation: {
+      ru: "Ранняя утрата близкого человека и повторяющиеся разрушительные отношения. Беременность обострила кризис — партнёр отстранился. Без стабильного дохода, страх одиночества, потеря себя.",
+      uz: "Yaqin insonni erta yo'qotish va takrorlanuvchi buzg'unchi munosabatlar. Homiladorlik inqirozni kuchaytirdi — sherigi chetlashdi. Barqaror daromadsiz, yolg'izlik qo'rquvi, o'zini yo'qotish.",
+    },
+    actionTitle: { ru: "Что сделал фонд", uz: "Fond nima qildi" },
+    action: {
+      ru: "Индивидуальная психологическая работа: стабилизация, проработка утраты и сценариев отвержения, укрепление личных границ. Бережная подготовка к материнству. Включение в структурированную деятельность (библиотека).",
+      uz: "Individual psixologik ish: barqarorlashtirish, yo'qotish va rad etish stsenariylari bilan ishlash, shaxsiy chegaralarni mustahkamlash. Onalikka ehtiyotkorlik bilan tayyorlash. Kutubxonada faoliyatga jalb etish.",
+    },
+    resultTitle: { ru: "Результат", uz: "Natija" },
+    result: {
+      ru: "Восстанавливает профессиональную идентичность и чувство собственной ценности. Прогноз благоприятный — сохранён высокий интеллект и потенциал. Готовится стать зрелой, уверенной мамой.",
+      uz: "Kasbiy o'zligini va o'z qadrini tiklamoqda. Prognoz ijobiy — yuqori intellekt va salohiyat saqlangan. Yetuk, ishonchli ona bo'lishga tayyorlanmoqda.",
+    },
+  },
+  storyNargiza: {
+    tag: { ru: "✨ ИСТОРИЯ УСПЕХА", uz: "✨ MUVAFFAQIYAT HIKOYASI" },
+    name: "Nargiza Yo'ldosheva",
+    caption: { ru: "1991 · дочь 2021 г. р. · швея", uz: "1991 · qizi 2021 y. · tikuvchi" },
+    situationTitle: { ru: "Ситуация", uz: "Vaziyat" },
+    situation: {
+      ru: "Замужем за супругом с инвалидностью I группы (травма позвоночника). Одна несёт быт, уход за маленькой дочерью и заботу о муже. Годы подчинения чужим решениям, эмоциональное истощение, риск выгорания.",
+      uz: "Turmush o'rtog'i I guruh nogironi (umurtqa jarohati). Ro'zg'or, kichik qizga va erga g'amxo'rlik yolg'iz yelkasida. Yillar davomida o'zganing qaroriga bo'ysunish, hissiy charchoq, kuyish xavfi.",
+    },
+    actionTitle: { ru: "Что сделал фонд", uz: "Fond nima qildi" },
+    action: {
+      ru: "Комплексная социальная и психологическая поддержка: безопасное пространство, восстановление эмоционального баланса и уверенности в себе, обучение навыкам самоподдержки и личных границ.",
+      uz: "Kompleks ijtimoiy va psixologik yordam: xavfsiz makon, hissiy muvozanat va o'ziga ishonchni tiklash, o'z-o'zini qo'llab-quvvatlash va shaxsiy chegaralar ko'nikmalariga o'rgatish.",
+    },
+    resultTitle: { ru: "Результат", uz: "Natija" },
+    result: {
+      ru: "Сохранены трудолюбие, ответственность и высокая адаптивность. Постепенно возвращается к профессиональной реализации и опоре на себя — ради себя и дочери.",
+      uz: "Mehnatsevarlik, mas'uliyat va yuqori moslashuvchanlik saqlangan. Asta-sekin kasbiy o'zini ro'yobga chiqarish va o'ziga tayanishga qaytmoqda — o'zi va qizi uchun.",
+    },
+  },
   slide10: {
     title: { ru: "8 домов по всему Узбекистану", uz: "O'zbekistondagi 8 ta uyimiz" },
     total: { ru: "212+ мам и их детей получили помощь", uz: "212+ ona va ularning bolalari yordam oldi" },
@@ -220,5 +280,20 @@ export const content = {
       { icon: "🌍", value: "1.18 млн", ru: "охват", uz: "qamrov" },
     ],
     cta: { ru: "Обратитесь через центры «Инсон» при НАСЗ", uz: "«Inson» markazlari orqali murojaat qiling" },
+  },
+  quvosoyIntro: {
+    tag: { ru: "ДОМ №7", uz: "7-UY" },
+    title: { ru: "Дом Кувасой", uz: "Quvasoy uyi" },
+    sub: { ru: "Ферганская долина", uz: "Farg'ona vodiysi" },
+    desc: {
+      ru: "Ресурсный центр фонда «ONA UYI» в Ферганской долине. Открыт в августе 2025 года — дом заботы и поддержки для мам с детьми в трудной жизненной ситуации.",
+      uz: "«ONA UYI» jamg'armasining Farg'ona vodiysidagi resurs markazi. 2025-yil avgustda ochildi — qiyin vaziyatdagi onalar va bolalar uchun g'amxo'rlik uyi.",
+    },
+    facts: [
+      { icon: "🏠", ru: "Открыт: август 2025", uz: "Ochildi: avgust 2025" },
+      { icon: "🗺", ru: "Ферганская долина", uz: "Farg'ona vodiysi" },
+      { icon: "📍", ru: "Рядом с Андижаном", uz: "Andijon yaqinida" },
+      { icon: "💚", ru: "100% бесплатно и конфиденциально", uz: "100% bepul va maxfiy" },
+    ],
   },
 } as const;

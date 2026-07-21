@@ -9,13 +9,13 @@ interface Props {
 }
 
 export default function Navbar({ onExport, exporting }: Props) {
-  const { lang, setLang } = useApp();
+  const { lang, setLang, setHouse } = useApp();
   return (
     <header className="navbar">
-      <div className="navbar__brand">
+      <button className="navbar__brand" onClick={() => setHouse(null)} title="К выбору дома">
         <img className="navbar__logo-img" src={logo} alt="ONA UYI" />
         <span className="navbar__logo">ONA UYI</span>
-      </div>
+      </button>
 
       <div className="navbar__actions">
         <div className="lang-toggle" role="group" aria-label="Язык">

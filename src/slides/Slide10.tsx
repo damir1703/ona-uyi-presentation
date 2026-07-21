@@ -8,9 +8,9 @@ import { content, houses } from "../data/content";
 import type { SlideProps } from "./types";
 
 export default function Slide10({ n, total, active }: SlideProps) {
-  const { lang } = useApp();
+  const { lang, house } = useApp();
   const c = content.slide10;
-  const [selected, setSelected] = useState<number | null>(1);
+  const [selected, setSelected] = useState<number | null>(house === "quvosoy" ? 8 : 1);
 
   return (
     <SlideShell n={n} total={total} dark className="s10">

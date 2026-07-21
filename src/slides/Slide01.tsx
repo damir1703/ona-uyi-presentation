@@ -6,8 +6,12 @@ import { content } from "../data/content";
 import type { SlideProps } from "./types";
 
 export default function Slide01({ n, total, active }: SlideProps) {
-  const { lang } = useApp();
+  const { lang, house } = useApp();
   const c = content.slide01;
+  const sub =
+    house === "quvosoy"
+      ? { ru: "Дом Кувасой, Ферганская долина", uz: "Quvasoy uyi, Farg'ona vodiysi" }[lang]
+      : c.sub[lang];
   return (
     <SlideShell n={n} total={total} className="s01">
       <div className="s01__grid">
@@ -19,7 +23,7 @@ export default function Slide01({ n, total, active }: SlideProps) {
             <h1 className="s01__title">{c.title}</h1>
           </RItem>
           <RItem>
-            <h2 className="s01__sub">{c.sub[lang]}</h2>
+            <h2 className="s01__sub">{sub}</h2>
           </RItem>
           <RItem>
             <span className="accent-line" />
