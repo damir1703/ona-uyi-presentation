@@ -665,6 +665,14 @@ img { display: block; max-width: 100%; }
   transition: width 0.9s var(--ease) 0.2s;
 }
 .s06__geo-count { width: 22px; text-align: right; font-weight: 800; color: var(--primary-light); }
+/* s06 side panel with two stacked blocks (categories + geography) */
+.s06__side { gap: 16px; padding: 20px 22px; overflow: auto; }
+.s06__side .s06__geo-title { margin-bottom: 10px; }
+.s06__side ul { gap: 8px; flex: none; justify-content: flex-start; }
+.s06__side li { font-size: 12px; }
+.s06__side-block + .s06__side-block { padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.s06__geo-name--wide { flex-basis: auto; }
+
 .qmed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
 .qmed li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.35; }
 .qmed__icon { font-size: 16px; flex-shrink: 0; }

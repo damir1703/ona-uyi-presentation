@@ -32,25 +32,41 @@ export default function Slide06({ n, total, active }: SlideProps) {
             ))}
           </RItem>
 
-          <RItem className="s06__geo">
-            <h3 className="s06__geo-title">🗺 {c.geoTitle[lang]}</h3>
-            <ul>
-              {c.regions.map((r, i) => {
-                const max = Math.max(...c.regions.map((x) => x.count));
-                return (
-                  <li key={i}>
-                    <span className="s06__geo-name">{r[lang]}</span>
-                    <span className="s06__geo-track">
-                      <span
-                        className="s06__geo-fill"
-                        style={{ width: active ? `${(r.count / max) * 100}%` : 0 }}
-                      />
-                    </span>
-                    <span className="s06__geo-count">{r.count}</span>
-                  </li>
-                );
-              })}
-            </ul>
+          <RItem className="s06__geo s06__side">
+            <div className="s06__side-block">
+              <h3 className="s06__geo-title">📋 {c.catTitle[lang]}</h3>
+              <ul>
+                {c.categories.map((r, i) => {
+                  const max = Math.max(...c.categories.map((x) => x.count), 1);
+                  return (
+                    <li key={i}>
+                      <span className="s06__geo-name s06__geo-name--wide">{r[lang]}</span>
+                      <span className="s06__geo-track">
+                        <span className="s06__geo-fill" style={{ width: active ? `${(r.count / max) * 100}%` : 0 }} />
+                      </span>
+                      <span className="s06__geo-count">{r.count}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="s06__side-block">
+              <h3 className="s06__geo-title">🗺 {c.geoTitle[lang]}</h3>
+              <ul>
+                {c.regions.map((r, i) => {
+                  const max = Math.max(...c.regions.map((x) => x.count));
+                  return (
+                    <li key={i}>
+                      <span className="s06__geo-name">{r[lang]}</span>
+                      <span className="s06__geo-track">
+                        <span className="s06__geo-fill" style={{ width: active ? `${(r.count / max) * 100}%` : 0 }} />
+                      </span>
+                      <span className="s06__geo-count">{r.count}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </RItem>
         </div>
       </Reveal>

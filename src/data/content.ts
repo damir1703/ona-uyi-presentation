@@ -106,6 +106,13 @@ export const content = {
       { num: 3, icon: "⚖️", ru: "Судебные дела", uz: "Sud ishlari", color: "#D97706" },
       { num: 5, icon: "👶", ru: "Детей родились в проекте", uz: "Loyihada tug'ilgan bolalar", color: "#065F46" },
     ],
+    catTitle: { ru: "Категории при поступлении", uz: "Kelgandagi toifalar" },
+    categories: [
+      { ru: "Тяжёлая жизненная ситуация (ТЖС)", uz: "Og'ir hayotiy vaziyat", count: 9 },
+      { ru: "Риск изъятия ребёнка в детдом", uz: "Bolani bolalar uyiga olish xavfi", count: 0 },
+      { ru: "Жертвы бытового насилия (ЖБН)", uz: "Maishiy zo'ravonlik qurbonlari", count: 12 },
+      { ru: "Риск отказа от ребёнка", uz: "Boladan voz kechish xavfi", count: 15 },
+    ],
     geoTitle: { ru: "География", uz: "Geografiya" },
     regions: [
       { ru: "Ташкентская обл.", uz: "Toshkent vil.", count: 13 },
