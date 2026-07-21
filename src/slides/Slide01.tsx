@@ -12,6 +12,14 @@ export default function Slide01({ n, total, active }: SlideProps) {
     house === "quvosoy"
       ? { ru: "Дом Кувасой, Ферганская долина", uz: "Quvasoy uyi, Farg'ona vodiysi" }[lang]
       : c.sub[lang];
+  const heroId = house === "quvosoy" ? "s01_hero_quvosoy" : "s01_hero";
+  const desc =
+    house === "quvosoy"
+      ? {
+          ru: "Ресурсный центр помощи мамам с детьми в трудной жизненной ситуации в Ферганской долине. Открыт в августе 2025 года.",
+          uz: "Farg'ona vodiysidagi qiyin vaziyatdagi onalar va bolalarga yordam markazi. 2025-yil avgustda ochildi.",
+        }[lang]
+      : c.desc[lang];
   return (
     <SlideShell n={n} total={total} className="s01">
       <div className="s01__grid">
@@ -29,7 +37,7 @@ export default function Slide01({ n, total, active }: SlideProps) {
             <span className="accent-line" />
           </RItem>
           <RItem>
-            <p className="s01__desc">{c.desc[lang]}</p>
+            <p className="s01__desc">{desc}</p>
           </RItem>
           <RItem>
             <div className="s01__stats">
@@ -44,7 +52,7 @@ export default function Slide01({ n, total, active }: SlideProps) {
 
         <div className="s01__right">
           <div className="circle circle--big float">
-            <PhotoUpload id="s01_hero" shape="circle" />
+            <PhotoUpload id={heroId} shape="circle" />
           </div>
           <div className="circle circle--mid">
             <span className="circle__icon">🏠</span>
