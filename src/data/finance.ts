@@ -141,8 +141,8 @@ export const finance: Record<House, HouseFinance> = {
     ],
   },
   quvosoy: {
-    since_ru: "Август 2025 — Июнь 2026",
-    since_uz: "Avgust 2025 — Iyun 2026",
+    since_ru: "Сентябрь 2025 — Июнь 2026",
+    since_uz: "Sentabr 2025 — Iyun 2026",
     totalSum: 1051593810,
     totalUsd: 87633,
     categories: [
@@ -151,7 +151,7 @@ export const finance: Record<House, HouseFinance> = {
       { key: "mgmt", ru: "Управление проектом", uz: "Loyihani boshqarish", sum: 293055954, usd: 24421, color: MGMT },
     ],
     years: [
-      { label_ru: "2025 (авг–дек)", label_uz: "2025 (avg–dek)", usd: 41101 },
+      { label_ru: "2025 (сен–дек)", label_uz: "2025 (sen–dek)", usd: 41101 },
       { label_ru: "2026 (I пол.)", label_uz: "2026 (I yarim)", usd: 46532 },
     ],
   },

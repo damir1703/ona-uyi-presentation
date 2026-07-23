@@ -16,8 +16,8 @@ export default function Slide01({ n, total, active }: SlideProps) {
   const desc =
     house === "quvosoy"
       ? {
-          ru: "Ресурсный центр помощи мамам с детьми в трудной жизненной ситуации в Ферганской долине. Открыт в августе 2025 года.",
-          uz: "Farg'ona vodiysidagi qiyin vaziyatdagi onalar va bolalarga yordam markazi. 2025-yil avgustda ochildi.",
+          ru: "Ресурсный центр помощи мамам с детьми в трудной жизненной ситуации в Ферганской долине. Открыт 9 сентября 2025 года.",
+          uz: "Farg'ona vodiysidagi qiyin vaziyatdagi onalar va bolalarga yordam markazi. 2025-yil 9-sentabrda ochildi.",
         }[lang]
       : c.desc[lang];
   const houseStat =
