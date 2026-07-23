@@ -308,8 +308,8 @@ export const content = {
     title: { ru: "Дом Кувасой", uz: "Quvasoy uyi" },
     sub: { ru: "Ферганская долина", uz: "Farg'ona vodiysi" },
     desc: {
-      ru: "Ресурсный центр фонда «ONA UYI» в Ферганской долине. Открыт в августе 2025 года — дом заботы и поддержки для мам с детьми в трудной жизненной ситуации.",
-      uz: "«ONA UYI» jamg'armasining Farg'ona vodiysidagi resurs markazi. 2025-yil avgustda ochildi — qiyin vaziyatdagi onalar va bolalar uchun g'amxo'rlik uyi.",
+      ru: "Ресурсный центр фонда «ONA UYI» в Ферганской долине. Открыт в сентябре 2025 года — дом заботы и поддержки для мам с детьми в трудной жизненной ситуации.",
+      uz: "«ONA UYI» jamg'armasining Farg'ona vodiysidagi resurs markazi. 2025-yil sentabrda ochildi — qiyin vaziyatdagi onalar va bolalar uchun g'amxo'rlik uyi.",
     },
     facts: [
       { icon: "🏠", ru: "Открыт: 9 сентября 2025", uz: "Ochildi: 2025-yil 9-sentabr" },
