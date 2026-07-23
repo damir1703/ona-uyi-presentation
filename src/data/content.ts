@@ -29,7 +29,6 @@ export const content = {
     stats: [
       { ru: "8 домов", uz: "8 uy", color: "#064E3B" },
       { ru: "По всему Узбекистану", uz: "Butun O'zbekiston bo'ylab", color: "#D97706" },
-      { ru: "100% бесплатно", uz: "100% bepul", color: "#0D9488" },
     ],
     housesLabel: { ru: "8 домов", uz: "8 uy" },
     footer: { ru: "Здесь каждая мама знает: она не одна", uz: "Bu yerda har bir ona biladi: u yolg'iz emas" },
