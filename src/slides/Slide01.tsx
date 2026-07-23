@@ -20,6 +20,14 @@ export default function Slide01({ n, total, active }: SlideProps) {
           uz: "Farg'ona vodiysidagi qiyin vaziyatdagi onalar va bolalarga yordam markazi. 2025-yil 9-sentabrda ochildi.",
         }[lang]
       : c.desc[lang];
+  const houseStat =
+    house === "quvosoy"
+      ? { ru: "16 мам · 25 детей", uz: "16 ona · 25 bola" }
+      : { ru: "36 мам · 48 детей", uz: "36 ona · 48 bola" };
+  const pills = [
+    { text: houseStat[lang], color: "#065F46" },
+    ...c.stats.map((s) => ({ text: s[lang], color: s.color })),
+  ];
   return (
     <SlideShell n={n} total={total} className="s01">
       <div className="s01__grid">
@@ -41,9 +49,9 @@ export default function Slide01({ n, total, active }: SlideProps) {
           </RItem>
           <RItem>
             <div className="s01__stats">
-              {c.stats.map((s, i) => (
+              {pills.map((s, i) => (
                 <span key={i} className="pill" style={{ background: s.color }}>
-                  {s[lang]}
+                  {s.text}
                 </span>
               ))}
             </div>
