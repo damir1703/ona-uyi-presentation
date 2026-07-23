@@ -11,7 +11,7 @@ export default function HouseChooser() {
       tashkent: "Дом Ташкент",
       tashkentSub: "Дом №1 · с июня 2024",
       quvosoy: "Дом Кувасой",
-      quvosoySub: "Дом №7 · Ферганская долина · с сентября 2025",
+      quvosoySub: "Дом №7 · Ферганская долина · с августа 2025",
       open: "Открыть",
     },
     uz: {
@@ -20,7 +20,7 @@ export default function HouseChooser() {
       tashkent: "Toshkent uyi",
       tashkentSub: "1-uy · 2024-yil iyundan",
       quvosoy: "Quvasoy uyi",
-      quvosoySub: "7-uy · Farg'ona vodiysi · 2025-yil sentabrdan",
+      quvosoySub: "7-uy · Farg'ona vodiysi · 2025-yil avgustdan",
       open: "Ochish",
     },
   }[lang];
