@@ -28,7 +28,7 @@ export const content = {
     },
     stats: [
       { ru: "8 домов", uz: "8 uy", color: "#064E3B" },
-      { ru: "212+ мам", uz: "212+ ona", color: "#D97706" },
+      { ru: "По всему Узбекистану", uz: "Butun O'zbekiston bo'ylab", color: "#D97706" },
       { ru: "100% бесплатно", uz: "100% bepul", color: "#0D9488" },
     ],
     housesLabel: { ru: "8 домов", uz: "8 uy" },
@@ -290,7 +290,7 @@ export const content = {
   },
   slide10: {
     title: { ru: "8 домов по всему Узбекистану", uz: "O'zbekistondagi 8 ta uyimiz" },
-    total: { ru: "212+ мам и их детей получили помощь", uz: "212+ ona va ularning bolalari yordam oldi" },
+    total: { ru: "Дом заботы и поддержки в каждом регионе", uz: "Har bir hududda g'amxo'rlik va yordam uyi" },
   },
   slide11: {
     tag: "ONA UYI · 2024–2026",
