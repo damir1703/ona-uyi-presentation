@@ -32,16 +32,35 @@ export default function SlideQuvosoyResults({ n, total, active }: SlideProps) {
             ))}
           </RItem>
 
-          <RItem className="s06__geo">
-            <h3 className="s06__geo-title">🏥 {c.medTitle[lang]}</h3>
-            <ul className="qmed">
-              {c.med.map((m, i) => (
-                <li key={i}>
-                  <span className="qmed__icon">{m.icon}</span>
-                  <span className="qmed__text">{m[lang]}</span>
-                </li>
-              ))}
-            </ul>
+          <RItem className="s06__geo s06__side">
+            <div className="s06__side-block">
+              <h3 className="s06__geo-title">📋 {c.catTitle[lang]}</h3>
+              <ul>
+                {c.categories.map((r, i) => {
+                  const max = Math.max(...c.categories.map((x) => x.count), 1);
+                  return (
+                    <li key={i}>
+                      <span className="s06__geo-name s06__geo-name--wide">{r[lang]}</span>
+                      <span className="s06__geo-track">
+                        <span className="s06__geo-fill" style={{ width: active ? `${(r.count / max) * 100}%` : 0 }} />
+                      </span>
+                      <span className="s06__geo-count">{r.count}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="s06__side-block">
+              <h3 className="s06__geo-title">🏥 {c.medTitle[lang]}</h3>
+              <ul className="qmed">
+                {c.med.map((m, i) => (
+                  <li key={i}>
+                    <span className="qmed__icon">{m.icon}</span>
+                    <span className="qmed__text">{m[lang]}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </RItem>
         </div>
       </Reveal>

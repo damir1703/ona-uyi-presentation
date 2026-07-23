@@ -1,4 +1,4 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, AlertTriangle } from "lucide-react";
 import SlideShell from "../components/SlideShell";
 import PhotoUpload from "../components/PhotoUpload";
 import { Reveal, RItem } from "../components/motion";
@@ -24,10 +24,18 @@ interface Props extends SlideProps {
   photoId: string;
   accent: string;
   tagGrad: string;
+  variant?: "success" | "failure";
 }
 
-export default function StorySlide({ n, total, active, data, photoId, accent, tagGrad }: Props) {
+export default function StorySlide({
+  n, total, active, data, photoId, accent, tagGrad, variant = "success",
+}: Props) {
   const { lang } = useApp();
+  const fail = variant === "failure";
+  const titleColor = fail ? "#FCA5A5" : "#34D399";
+  const midCard = fail ? "linear-gradient(135deg, #B45309, #92400E)" : "linear-gradient(135deg, #065F46, #0D9488)";
+  const lastCard = fail ? "linear-gradient(135deg, #475569, #334155)" : "linear-gradient(135deg, #10B981, #34D399)";
+
   return (
     <SlideShell n={n} total={total} className="story">
       <div className="story__grid">
@@ -52,23 +60,21 @@ export default function StorySlide({ n, total, active, data, photoId, accent, ta
 
         <Reveal active={active} className="story__cards">
           <RItem className="story__card story__card--dark">
-            <h4 style={{ color: "#34D399" }}>{data.situationTitle[lang]}</h4>
+            <h4 style={{ color: titleColor }}>{data.situationTitle[lang]}</h4>
             <span className="story__divider" />
             <p>{data.situation[lang]}</p>
           </RItem>
-          <RItem
-            className="story__card"
-            style={{ background: "linear-gradient(135deg, #065F46, #0D9488)" }}
-          >
+          <RItem className="story__card" style={{ background: midCard }}>
             <h4>{data.actionTitle[lang]}</h4>
             <span className="story__divider story__divider--light" />
             <p>{data.action[lang]}</p>
           </RItem>
-          <RItem
-            className="story__card story__card--result"
-            style={{ background: "linear-gradient(135deg, #10B981, #34D399)" }}
-          >
-            <CheckCircle2 className="story__check" size={24} />
+          <RItem className="story__card story__card--result" style={{ background: lastCard }}>
+            {fail ? (
+              <AlertTriangle className="story__check" size={24} />
+            ) : (
+              <CheckCircle2 className="story__check" size={24} />
+            )}
             <h4>{data.resultTitle[lang]}</h4>
             <span className="story__divider story__divider--light" />
             <p>{data.result[lang]}</p>

@@ -108,10 +108,11 @@ export const content = {
     ],
     catTitle: { ru: "Категории при поступлении", uz: "Kelgandagi toifalar" },
     categories: [
-      { ru: "Тяжёлая жизненная ситуация (ТЖС)", uz: "Og'ir hayotiy vaziyat", count: 9 },
-      { ru: "Риск изъятия ребёнка в детдом", uz: "Bolani bolalar uyiga olish xavfi", count: 0 },
-      { ru: "Жертвы бытового насилия (ЖБН)", uz: "Maishiy zo'ravonlik qurbonlari", count: 12 },
-      { ru: "Риск отказа от ребёнка", uz: "Boladan voz kechish xavfi", count: 15 },
+      { ru: "Нет безопасного места для проживания", uz: "Xavfsiz turar joyi yo'q", count: 5 },
+      { ru: "Нет средств или поддержки семьи", uz: "Mablag' yoki oila yordami yo'q", count: 0 },
+      { ru: "Рассматривают отказ от ребёнка", uz: "Boladan voz kechishni o'ylamoqda", count: 15 },
+      { ru: "Насилие со стороны супруга/родных", uz: "Er yoki qarindoshlar zo'ravonligi", count: 12 },
+      { ru: "Другие обстоятельства", uz: "Boshqa holatlar", count: 4 },
     ],
     geoTitle: { ru: "География", uz: "Geografiya" },
     regions: [
@@ -340,5 +341,75 @@ export const content = {
       { icon: "🦷", ru: "Лечение и вставка зубов — 2", uz: "Tish davolash va protez — 2" },
       { icon: "➕", ru: "Обрезание — 2", uz: "Sunnat — 2" },
     ],
+    catTitle: { ru: "Категории при поступлении", uz: "Kelgandagi toifalar" },
+    categories: [
+      { ru: "Нет безопасного места для проживания", uz: "Xavfsiz turar joyi yo'q", count: 4 },
+      { ru: "Нет средств или поддержки семьи", uz: "Mablag' yoki oila yordami yo'q", count: 5 },
+      { ru: "Рассматривают отказ от ребёнка", uz: "Boladan voz kechishni o'ylamoqda", count: 4 },
+      { ru: "Насилие со стороны супруга/родных", uz: "Er yoki qarindoshlar zo'ravonligi", count: 2 },
+      { ru: "Другие обстоятельства", uz: "Boshqa holatlar", count: 1 },
+    ],
   },
+  failCases: [
+    {
+      tag: { ru: "НЕУСПЕШНЫЙ КЕЙС", uz: "MUVAFFAQIYATSIZ HOLAT" },
+      name: "Наталья Балабаева",
+      caption: { ru: "род. 2005 · сын", uz: "2005 y. · o'g'li" },
+      situationTitle: { ru: "Краткая история", uz: "Qisqacha tarix" },
+      situation: {
+        ru: "Выросла в неблагополучной семье, рано потеряла мать, осталась без документов и полноценного образования. Создала семью с юношей из детдома — постоянные конфликты и отсутствие поддержки. После рождения сына попала в трудную ситуацию и направлена в проект.",
+        uz: "Nochor oilada o'sdi, onasini erta yo'qotdi, hujjatsiz va to'liq ta'limsiz qoldi. Bolalar uyida o'sgan yigit bilan oila qurdi — doimiy nizolar va qo'llab-quvvatlovsizlik. O'g'li tug'ilgach og'ir vaziyatga tushib, loyihaga yo'naltirildi.",
+      },
+      actionTitle: { ru: "Причина неуспеха", uz: "Muvaffaqiyatsizlik sababi" },
+      action: {
+        ru: "Систематически нарушала правила: самовольно покидала центр без уведомления, подолгу отсутствовала, не соблюдала условия проживания. Профилактические беседы, психологическое и социальное сопровождение не дали устойчивой динамики.",
+        uz: "Qoidalarni muntazam buzdi: markazni ogohlantirmasdan tark etardi, uzoq vaqt yo'q bo'lardi, yashash shartlariga rioya qilmasdi. Profilaktik suhbatlar, psixologik va ijtimoiy hamrohlik barqaror natija bermadi.",
+      },
+      resultTitle: { ru: "Результат", uz: "Natija" },
+      result: {
+        ru: "Из-за систематических нарушений участие в программе завершено досрочно. Передана под дальнейшее сопровождение социальных работников по месту жительства.",
+        uz: "Muntazam buzilishlar tufayli dasturdagi ishtirok muddatidan oldin yakunlandi. Yashash joyidagi ijtimoiy xodimlar hamrohligiga topshirildi.",
+      },
+    },
+    {
+      tag: { ru: "НЕУСПЕШНЫЙ КЕЙС", uz: "MUVAFFAQIYATSIZ HOLAT" },
+      name: "Аружан Текебаева",
+      caption: { ru: "род. 2004 · сын", uz: "2004 y. · o'g'li" },
+      situationTitle: { ru: "Краткая история", uz: "Qisqacha tarix" },
+      situation: {
+        ru: "Поступила с малолетним сыном, спасаясь от домашнего насилия — физического, психологического и экономического. Была под постоянным контролем мужа, ограничена в передвижении. С помощью органов внутренних дел покинула опасную среду и обратилась в проект.",
+        uz: "Kichik o'g'li bilan maishiy zo'ravonlikdan (jismoniy, psixologik, iqtisodiy) qochib keldi. Eri doimiy nazorat ostida ushlab turardi. IIB yordamida xavfli muhitni tark etib, loyihaga murojaat qildi.",
+      },
+      actionTitle: { ru: "Причина неуспеха", uz: "Muvaffaqiyatsizlik sababi" },
+      action: {
+        ru: "Получила безопасное жильё, психологическую, социальную и юридическую помощь; оформлен защитный ордер. Но в тот же день решила примириться с мужем и добровольно покинула проект. Насилие впоследствии продолжилось.",
+        uz: "Xavfsiz turar joy, psixologik, ijtimoiy va yuridik yordam oldi; himoya orderi rasmiylashtirildi. Ammo o'sha kuniyoq eri bilan yarashishga qaror qilib, loyihani ixtiyoriy tark etdi. Keyinchalik zo'ravonlik davom etdi.",
+      },
+      resultTitle: { ru: "Результат", uz: "Natija" },
+      result: {
+        ru: "Несмотря на полный комплекс защиты, включая ордер, вернулась в абьюзивные отношения. Возвращение к агрессору — одна из самых сложных проблем; требует длительной реабилитации и внутренней готовности к изменениям.",
+        uz: "To'liq himoya choralariga, jumladan orderga qaramay, zo'ravon munosabatlarga qaytdi. Zo'ravonga qaytish — eng murakkab muammolardan biri; uzoq reabilitatsiya va ichki tayyorlikni talab qiladi.",
+      },
+    },
+    {
+      tag: { ru: "НЕУСПЕШНЫЙ КЕЙС", uz: "MUVAFFAQIYATSIZ HOLAT" },
+      name: "Башорат Мингбаева",
+      caption: { ru: "пострадавшая от насилия", uz: "zo'ravonlikdan jabrlangan" },
+      situationTitle: { ru: "Краткая история", uz: "Qisqacha tarix" },
+      situation: {
+        ru: "Поступила как пострадавшая от домашнего насилия. Получила безопасное жильё, психологическое сопровождение, юридическую помощь, содействие в разводе, продолжении обучения и устройстве ребёнка в детский сад.",
+        uz: "Maishiy zo'ravonlikdan jabrlangan holda keldi. Xavfsiz turar joy, psixologik hamrohlik, yuridik yordam, ajralishda, o'qishni davom ettirishda va bolani bog'chaga joylashtirishda ko'mak oldi.",
+      },
+      actionTitle: { ru: "Причина неуспеха", uz: "Muvaffaqiyatsizlik sababi" },
+      action: {
+        ru: "Несмотря на развод, неоднократно возобновляла отношения с бывшим супругом, который продолжал абьюзивное поведение. После каждого возвращения цикл насилия повторялся.",
+        uz: "Ajralishga qaramay, zo'ravonligini davom ettirgan sobiq eri bilan munosabatlarni qayta-qayta tikladi. Har safar qaytgach, zo'ravonlik takrorlandi.",
+      },
+      resultTitle: { ru: "Результат", uz: "Natija" },
+      result: {
+        ru: "Помощь оказана в полном объёме, но устойчивого выхода из ситуации достичь не удалось. Без внутренней готовности к окончательному разрыву и длительной реабилитации риск повторного насилия остаётся высоким.",
+        uz: "Yordam to'liq ko'rsatildi, ammo vaziyatdan barqaror chiqishga erishilmadi. Yakuniy uzilishga ichki tayyorlik va uzoq reabilitatsiyasiz takroriy zo'ravonlik xavfi yuqori.",
+      },
+    },
+  ],
 } as const;
