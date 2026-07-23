@@ -125,8 +125,8 @@ export const financeDetail: Record<House, DetailGroup[]> = {
 
 export const finance: Record<House, HouseFinance> = {
   tashkent: {
-    since_ru: "Июнь 2024 — Июнь 2026",
-    since_uz: "Iyun 2024 — Iyun 2026",
+    since_ru: "Май 2024 — Июнь 2026",
+    since_uz: "May 2024 — Iyun 2026",
     totalSum: 3333943992,
     totalUsd: 277828,
     categories: [
